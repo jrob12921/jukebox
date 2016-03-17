@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jukebox</title>
+  <script type="text/javascript" src="javascripts/jquery.js"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+
+<h1>Welcome to the Jukebox</h1>
+
+<div id="now_playing_container">
+
+  <span id="now_playing_title"><strong>NOW PLAYING</strong></span>  
+
+  <span><strong>Song Name:</strong></span>
+  <div class="title" id="now_playing_name">Landing</div><br>
+
+  <span><strong>Song Artist:</strong></span>
+  <div class="title" id="now_playing_artist">Pigeons Playing Ping Pong</div><br>
+
+</div>
+
+<div id="buttons">
+
+  <audio id="song" src="songs/landing.mp3" type="audio/mpeg"></audio>
+
+  <button id="play_pause"><img id="play_pause_image" src="images/play.svg"></button>
+
+</div>
+
+<div id="song_list">
+  
+  <div id="left_list">
+
+    <button class="indiv_song" id="landing" data-list='{"name":"Landing", "artist":"Pigeons Playing Ping Pong", "filename":"landing.mp3", "filetype":"audio/mpeg"}'></button>
+
+    <button class="indiv_song" id="one_more_time" data-list='{"name":"One More Time", "artist":"Daft Punk", "filename":"one_more_time.mp3", "filetype":"audio/mpeg"}'></button>
+
+    <button class="indiv_song" id="tweezer_reprise" data-list='{"name":"Tweezer Reprise", "artist":"Phish", "filename":"tweezer_reprise.mp3", "filetype":"audio/mp3"}'></button>
+
+  </div>
+
+  <div id="right_list">
+
+    <button class="indiv_song" id="jessica" data-list='{"name":"Jessica", "artist":"The Allman Brothers", "filename":"jessica.mp3", "filetype":"audio/mpeg"}'></button>
+
+    <button class="indiv_song" id="walking_in_circles" data-list='{"name":"Walking In Circles", "artist":"Raq", "filename":"walking_in_circles.mp3", "filetype":"audio/mpeg"}'></button>
+
+    <button class="indiv_song" id="syncopated_healing" data-list='{"name":"Syncopated Healing", "artist":"Twiddle", "filename":"syncopated_healing.mp3", "filetype":"audio/mp3"}'></button>
+
+  </div>
+  
+</div>
+
+</body>
+</html>
