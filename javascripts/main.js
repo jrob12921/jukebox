@@ -90,7 +90,7 @@
       var current_song_name = $("#now_playing_name").text()
       var num_songs = $(".indiv_song").length
       var current_song_index = $.inArray(current_song_name, song_titles)
-      var new_song_index = (current_song_index + - 1 + num_songs ) % num_songs
+      var new_song_index = (current_song_index - 1 + num_songs ) % num_songs
       var new_song = $(".indiv_song")[new_song_index]
 
       this.play_new_song(new_song)
@@ -111,7 +111,7 @@ $(document).ready(function(){
   song_titles = []
   
   $(".indiv_song").each(function(){
-    $(this).html("<span class='song_info'>" + $(this).data("list").name.toUpperCase()  + "</span><br><br><span class='song_info'>BY</span><br><br><span class='song_info'>" + $(this).data("list").artist.toUpperCase() + "</span>")
+    $(this).html("<span class='song_info roboto_font'>" + $(this).data("list").name.toUpperCase()  + "</span><br><br><span class='song_info handlee_font'>BY</span><br><br><span class='song_info roboto_font'>" + $(this).data("list").artist.toUpperCase() + "</span>")
     
     $(this).css("background-image", "url(images/" + $(this).data("list").image + ")" )
     
