@@ -5,6 +5,10 @@
   font-size: 2vw;
   display: block;
   margin: 2vw;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-color: rgba(255, 42, 0, .8);
+
 }
 
 #song_list li {
@@ -12,11 +16,29 @@
   margin-bottom: 2vw;
 }
 
-#play_pause, #play_pause_image {
-  width: 10vw;
-  height: 10vw;  
+#play_pause_image {
+  width: 100%;
+  height: 100%;  
   padding: 0;
-  float: right;
+}
+
+#random_image {
+  width: 72%;
+  height: 72%;  
+  padding: 0;
+}
+
+#stop_image, #next_image {
+  width: 50%;
+  height: 50%; 
+}
+
+.buttons {
+  width: 5vw;
+  height: 5vw;  
+  padding: 0;
+  background-color: #5e0;
+  border-color: rgba(255, 42, 0, .8);
 }
 
 #song_list {
@@ -31,54 +53,75 @@
   float: right;
 }
 
+.song_info {
+  background-color: #5e0;
+  color: rgba(255, 0, 50, 1);
+}
+
 #now_playing_container{
   float: left;
+  width: 21%;
+  background-color: #5e0;
+  padding: 0 0 0 2vw;
+  color: rgba(255, 0, 50, 1);
 }
 
 #now_playing_title{
-  font-size: 3vw;
+  font-size: 2.5vw;
+  margin: 0 auto; 
+  text-decoration: underline;
 }
 
 .title{
   text-align: right;
+  margin-right: 2vw;
 }
 
-#now_playing_container, #buttons {
-  width: 27%; 
-}
-
-#buttons{
+#controls{
   /*margin: 4vw 6vw 0 0;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 25%; 
+  /*float: right;*/
+}
+
+.buttons_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 body {
-  background-image: url(../images/jukebox.jpg);
-  background-size: cover;
+  /*background-image: url(../images/jukebox.jpg);*/
+  /*background-size: cover;*/
+  background-image: url(../images/jukebox_background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFB300;
 }
 
 #heading_container{
   display: flex;
   justify-content: space-between;
-  padding: 3vw 0 0 4vw;
+  padding: 1.5vw 0 0 2vw;
 }
 
-h1{
+/*h1{
   margin: 0 auto;
   text-align: center;
-  /*width: 33%;*/
-  /*background-color: #e00*/
-}
+  width: 33%;
+  background-color: #e00
+}*/
 
 .progressBar {
   position: relative;
   width: 90%;
   height: 2vw;
-  backgroud-color: #000;
-  border: 1px solid black
+  background-color: #FF2A00;
+  border: 1px solid black;
 }
 
 .timeBar {
@@ -87,5 +130,11 @@ h1{
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #ccc;
+  background-color: #5e0;
+}
+
+.progressTime {
+  /*background-color: #5e0;*/
+  color: rgba(255, 0, 50, 1);
+  font-size: 3vw;
 }

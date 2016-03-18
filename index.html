@@ -14,32 +14,42 @@
 
   <div id="now_playing_container">
 
-    <span id="now_playing_title"><strong>NOW PLAYING</strong></span><br><br>
+    <div id="now_playing_title"><strong>NOW PLAYING</strong></div>
 
-    <span><strong>Song Name:</strong></span>
-    <div class="title" id="now_playing_name">Landing</div><br>
+    <span><strong>Name:</strong></span>
+    <div class="title" id="now_playing_name">Landing</div>
 
-    <span><strong>Song Artist:</strong></span>
+    <span><strong>Artist:</strong></span>
     <div class="title" id="now_playing_artist">Pigeons Playing Ping Pong</div><br>
 
   </div>
 
-  <div id="greeting">
-    <h1>Welcome to the Jukebox</h1>
-  </div>
-
-  <div id="buttons">
+  <div id="controls">
 
     <audio id="song" src="songs/landing.mp3" type="audio/mpeg"></audio>
 
-    <button id="play_pause"><img id="play_pause_image" src="images/play.svg"></button>
+    <div class="buttons_container">
 
+      <button id="play_pause" class="buttons"><img id="play_pause_image" class="button_image" src="images/play.svg"></button>
+
+      <button id="random" class="buttons"><img id="random_image" class="button_image" src="images/random.svg"></button>
+
+    <!-- </div> -->
+
+    <!-- <div class="buttons_container"> -->
+
+      <button id="stop" class="buttons"><img id="stop_image"  class="button_image" src="images/stop.png"></button>
+
+      <button id="next_song" class="buttons"><img id="next_image"  class="button_image" src="images/next.svg"></button>
+
+    </div>
+    
     <div class="progressBar">
       <div class="timeBar"></div>
     </div>
 
     <div class="progressTime">
-      <strong>Progress: </strong><span class="current">0:00</span><strong> of </strong><span class="duration"></span>
+      <span class="current">0:00</span> / <span class="duration"></span>
     </div>
 
   </div>
@@ -50,21 +60,21 @@
   
   <div id="left_list">
 
-    <button class="indiv_song" id="landing" data-list='{"name":"Landing", "artist":"Pigeons Playing Ping Pong", "filename":"landing.mp3", "filetype":"audio/mpeg"}'></button>
+    <button class="indiv_song" id="landing" data-list='{"name":"Landing", "artist":"Pigeons Playing Ping Pong", "filename":"landing.mp3", "filetype":"audio/mpeg","image":"pigeons_image.jpg"}'></button>
 
-    <button class="indiv_song" id="one_more_time" data-list='{"name":"One More Time", "artist":"Daft Punk", "filename":"one_more_time.mp3", "filetype":"audio/mpeg"}'></button>
+    <button class="indiv_song" id="one_more_time" data-list='{"name":"One More Time", "artist":"Daft Punk", "filename":"one_more_time.mp3", "filetype":"audio/mpeg","image":"daft_punk_image.jpg"}'></button>
 
-    <button class="indiv_song" id="do_it_like_you_do" data-list='{"name":"Do It Like You Do", "artist":"Lettuce", "filename":"do_it_like_you_do.mp3", "filetype":"audio/mp3"}'></button>
+    <button class="indiv_song" id="do_it_like_you_do" data-list='{"name":"Do It Like You Do", "artist":"Lettuce", "filename":"do_it_like_you_do.mp3", "filetype":"audio/mp3","image":"lettuce_image.jpg"}'></button>
 
   </div>
 
   <div id="right_list">
 
-    <button class="indiv_song" id="jessica" data-list='{"name":"Jessica", "artist":"The Allman Brothers", "filename":"jessica.mp3", "filetype":"audio/mpeg"}'></button>
+    <button class="indiv_song" id="jessica" data-list='{"name":"Jessica", "artist":"The Allman Brothers", "filename":"jessica.mp3", "filetype":"audio/mpeg","image":"allman_brothers_image.jpg"}'></button>
 
-    <button class="indiv_song" id="walking_in_circles" data-list='{"name":"Walking In Circles", "artist":"Raq", "filename":"walking_in_circles.mp3", "filetype":"audio/mpeg"}'></button>
+    <button class="indiv_song" id="walking_in_circles" data-list='{"name":"Walking In Circles", "artist":"Raq", "filename":"walking_in_circles.mp3", "filetype":"audio/mpeg","image":"raq_image.jpg"}'></button>
 
-    <button class="indiv_song" id="syncopated_healing" data-list='{"name":"Syncopated Healing", "artist":"Twiddle", "filename":"syncopated_healing.mp3", "filetype":"audio/mp3"}'></button>
+    <button class="indiv_song" id="syncopated_healing" data-list='{"name":"Syncopated Healing", "artist":"Twiddle", "filename":"syncopated_healing.mp3", "filetype":"audio/mp3","image":"twiddle_image.jpg"}'></button>
 
   </div>
   
