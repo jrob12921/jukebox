@@ -86,6 +86,16 @@
       this.play_new_song(new_song)
     }
 
+    this.prev_song = function() {
+      var current_song_name = $("#now_playing_name").text()
+      var num_songs = $(".indiv_song").length
+      var current_song_index = $.inArray(current_song_name, song_titles)
+      var new_song_index = (current_song_index + - 1 + num_songs ) % num_songs
+      var new_song = $(".indiv_song")[new_song_index]
+
+      this.play_new_song(new_song)
+    }
+
     this.stop_song = function() {
       song.currentTime = 0
       song.pause()
@@ -153,6 +163,10 @@ $(document).ready(function(){
 
   $("#next_song").click(function(){
     juke.next_song()
+  })
+
+  $("#prev_song").click(function(){
+    juke.prev_song()
   })
 
 })
