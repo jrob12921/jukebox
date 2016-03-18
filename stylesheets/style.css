@@ -1,16 +1,10 @@
-h1{
-  margin: 0 auto;
-  text-align: center;
-  width: 33%;
-  background-color: #e00
-}
 
 .indiv_song {
   width: 20vw;
   height: 16vw;
   font-size: 2vw;
   display: block;
-  margin: 0 2vw 2vw 0;
+  margin: 2vw;
 }
 
 #song_list li {
@@ -39,18 +33,59 @@ h1{
 
 #now_playing_container{
   float: left;
-
 }
 
 #now_playing_title{
-
+  font-size: 3vw;
 }
 
-#now_playing, #buttons {
+.title{
+  text-align: right;
+}
 
+#now_playing_container, #buttons {
+  width: 27%; 
+}
+
+#buttons{
+  /*margin: 4vw 6vw 0 0;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 body {
   background-image: url(../images/jukebox.jpg);
   background-size: cover;
+}
+
+#heading_container{
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 0 0 4vw;
+}
+
+h1{
+  margin: 0 auto;
+  text-align: center;
+  /*width: 33%;*/
+  /*background-color: #e00*/
+}
+
+.progressBar {
+  position: relative;
+  width: 90%;
+  height: 2vw;
+  backgroud-color: #000;
+  border: 1px solid black
+}
+
+.timeBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
 }
