@@ -1,1 +1,19 @@
-<?xml version="1.0" ?><svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M12 12h4v24h-4zm7 12l17 12V12z"/><path d="M0 0h48v48H0z" fill="none"/></svg>
+<svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+ <title/>
+ <desc/>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g transform="rotate(180 6,6) " id="Page-1" fill-rule="evenodd" fill="none">
+   <g id="Icons-AV" fill="#000000">
+    <g id="skip-next">
+     <path id="Shape" d="m0,12l8.5,-6l-8.5,-6l0,12l0,0zm10,-12l0,12l2,0l0,-12l-2,0l0,0z"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

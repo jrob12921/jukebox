@@ -41,6 +41,16 @@
   border-color: rgba(255, 42, 0, .8);
 }
 
+.button_image {
+    width: 5vw;
+    height: 5vw;
+}
+
+#prev_image {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
 #song_list {
   clear: both;
 }
@@ -59,7 +69,7 @@
 }
 
 #now_playing_container{
-  float: left;
+  /*float: left;*/
   width: 21%;
   background-color: #5e0;
   padding: 0 0 0 2vw;
@@ -72,7 +82,7 @@
   text-decoration: underline;
 }
 
-.title{
+.now_playing_info{
   text-align: right;
   margin-right: 2vw;
 }
@@ -114,7 +124,7 @@ body {
 #heading_container{
   display: flex;
   justify-content: space-between;
-  padding: 1.5vw 0 0 2vw;
+  /*padding: 1.5vw 0 0 0;*/
 }
 
 /*h1{
@@ -145,4 +155,92 @@ body {
   /*background-color: #5e0;*/
   color: rgba(255, 0, 50, 1);
   font-size: 3vw;
+}
+
+
+@media all and (max-width: 760px) {
+
+  #right_list {
+    float: left;
+  }
+
+  #right_list, #left_list {
+    width: 50%;
+    margin: 0
+  }
+
+  #heading_container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .indiv_song {
+    width: 50vw;
+    height: 40vw;
+    margin: 0;
+    padding: 0;
+    font-size: 4vw;
+  }
+
+  #now_playing_container {
+    /*margin: 2vw 0 0 3vw;*/
+    padding: 2vw 0;
+    margin: 4vw auto 2vw;
+    width: 90%;
+    border: 1vw solid rgba(255, 42, 0, .8);
+  }
+
+  #controls {
+    width: 100%;
+    /*padding: 0;*/
+  }
+
+  .buttons{
+    width: 15vw;
+    height: 15vw;  
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-size: 100% 70%;
+    background-position: top;
+  }
+
+  .now_playing_info {
+    text-align: center;
+    margin: 0;
+  }
+  
+  #now_playing_title {
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .progressBar {
+    width: 90%;
+    height: 4vw;
+    margin: 2vw 0;
+  }
+
+  .progressTime {
+    background-color: #5e0;
+    color: rgba(255, 0, 50, 1);
+    font-size: 4vw;
+    margin: 0 0 2vw 0;
+  }
+
+  .buttons_container{
+    width: 90%;
+  }
+
+  .now_playing_display {
+    padding: 0 0 0 2vw;
+  }
+
+  #prev_image {
+    width: 6vw;
+    height: 6vw;
+  }
+
 }
